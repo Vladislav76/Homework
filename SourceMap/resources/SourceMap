@@ -1,0 +1,5 @@
+{
+    "sources": ["Example.java"],
+    "names": ["public","class","HelloWorld","{","static","void","main","(","String[]","args",")","System.out.println",""Hello,world!"",";","}"],
+    "mappings": "AAAAA,AAAOC,AAAMC,AAAWC;AACIH,AAAOI,AAAOC,AAAKC,AAAIC,AAACC,AAASC,AAAIC,AAAEP;AACQQ,AAAkBJ,AAACK,AAAcF,AAACG;AACIC;AACAA;"
+}
