@@ -29,7 +29,9 @@ public class SourceMapDecoder {
 	}	
 
 	private void closeSourceMap() {
-		in.close();	
+		if (in != null) {
+			in.close();
+		}
 	}
 
 	public void decodeSourceMap(String fileName) {
