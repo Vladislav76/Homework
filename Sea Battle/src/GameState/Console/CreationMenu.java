@@ -176,24 +176,12 @@ public class CreationMenu extends GameState {
 	private void showCurrentCreatedMap() {
 		System.out.print("  ");
 		for(int i = 0; i < widthMap; i++) {
-			if (i <= 9) {
-				System.out.printf("%2d", i);
-			}
-			else {
-				int c = (int) 'A' + (i - 10);
-				System.out.print(" " + (char) c);
-			}
+			System.out.print(Integer.toString(i, i + 1).toUpperCase() + " ");	
 		}		
 		System.out.println();
 
 		for(int i = 0; i < heightMap; i++) {
-			if (i <= 9) {
-				System.out.printf("%2d", i);
-			}
-			else {
-				int c = (int) 'A' + (i - 10);
-				System.out.print(" " + (char) c);
-			}
+			System.out.print(Integer.toString(i, i + 1).toUpperCase());
 			for(int j = 0; j < widthMap; j++) {
 				if (maps[currentPlayer].isBusyZone(j, i)) {
 					System.out.print(" *");

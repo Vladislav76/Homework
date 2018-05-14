@@ -70,30 +70,18 @@ public class Gameplay extends GameState {
 		int currentPlayer = gameManager.getLastPlayerThatMadeStep();
 		int width = maps[currentPlayer].getWidth();
 		int height = maps[currentPlayer].getHeight();
-		System.out.print("  ");
 		for(int k = 0; k < 2; k++) {
+			System.out.print("  ");
 			for(int i = 0; i < width; i++) {
-				if (i <= 9) {
-				System.out.printf("%2d", i);
-				}
-				else {
-					int c = (int) 'A' + (i - 10);
-					System.out.print(" " + (char) c);
-				}
+				System.out.print(Integer.toString(i, i + 1).toUpperCase() + " ");
 			}
-			System.out.print("     ");
+			System.out.print("  ");
 		}
 		System.out.println();
 
 		for(int i = 0; i < height; i++) {
 			for(int k = 0; k <= 1; k++) {
-				if (i <= 9) {
-				System.out.printf("%2d", i);
-				}
-				else {
-					int c = (int) 'A' + (i - 10);
-					System.out.print(" " + (char) c);
-				}
+				System.out.print(Integer.toString(i, i + 1).toUpperCase());
 				for(int j = 0; j < width; j++) {
 					if (maps[k].isNotEmptyAfterShotZone(j, i)) {
 						System.out.print(" x");
