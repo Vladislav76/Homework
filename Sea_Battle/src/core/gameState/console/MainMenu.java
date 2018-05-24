@@ -1,7 +1,7 @@
 //package core.gameState.console;
 //
 //import core.gameState.GameState;
-//import core.gameState.GameStateManager;
+//import core.gameState.ConsoleGameStateManager;
 //import core.message.Message;
 
 import java.util.Scanner;
@@ -10,7 +10,7 @@ public class MainMenu extends GameState {
 	private static final String COMMAND_START = "start";
 	private static final String COMMAND_EXIT = "exit";
 
-	public MainMenu(GameStateManager gsm) {
+	public MainMenu(ConsoleGameStateManager gsm) {
 		this.gsm = gsm;
 	}
 

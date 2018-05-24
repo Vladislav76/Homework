@@ -1,21 +1,14 @@
 //package core.main;
 //
-//import core.gameState.GameStateManager;
-
-import java.lang.Thread;
+//import core.gameState.ConsoleGameStateManager;
 
 public class ConsolePanel implements RunnablePanel {
 	private GameStateManager gsm;
-	private Thread thread;
 	private boolean isClosing;
 
 	public ConsolePanel() {
+		gsm = new ConsoleGameStateManager(this);
 		isClosing = false;
-		gsm = new GameStateManager(this);
-		if (thread == null) {
-			thread = new Thread(this);
-			thread.start();
-		}
 	}
 
 	@Override

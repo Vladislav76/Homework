@@ -1,5 +1,5 @@
 //package core.gameState;
-//
+
 //import core.message.Message;
 
 public abstract class GameState {
@@ -10,7 +10,7 @@ public abstract class GameState {
 	public static final int EXIT = 4;
 	public static final int NUMBER_OF_GAME_STATES = 4;
 
-	protected GameStateManager gsm;
+	protected ConsoleGameStateManager gsm;
 
 	public abstract void update();
 	public abstract void render();

@@ -7,8 +7,9 @@ import java.util.Set;
 import java.util.Collection;
 
 public class PluginLoader {
+	public static HashMap<String, PluginInfo> plugins;
 
-	public HashMap<String, PluginInfo> getPlugins() {
+	public void loadPlugins() {
 		File pluginDir = new File("src/plugins");
 		File[] jars = pluginDir.listFiles(new FileFilter() {
 			public boolean accept(File file) {
@@ -16,7 +17,7 @@ public class PluginLoader {
 			}
 		});
 
-		HashMap<String, PluginInfo> plugins = new HashMap<>();
+		plugins = new HashMap<>();
 
 		for (File file : jars) {
 			try {
@@ -28,8 +29,5 @@ public class PluginLoader {
 		}
 
 		System.out.println("Plugins are loaded: " + jars.length);
-
- 		return plugins;
 	}
-
 }

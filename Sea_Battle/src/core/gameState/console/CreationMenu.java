@@ -1,7 +1,7 @@
 //package core.gameState.console;
 
 //import core.gameState.GameState;
-//import core.gameState.GameStateManager;
+//import core.gameState.ConsoleGameStateManager;
 //import core.mapObject.SeaMap;
 //import core.mapObject.Ship;
 //import core.message.Message;
@@ -40,10 +40,10 @@ public class CreationMenu extends GameState {
 	private Message lastMessage;
 	private PluginFactory aiFactory;
 
-	public CreationMenu(GameStateManager gsm) {
+	public CreationMenu(ConsoleGameStateManager gsm) {
 		this.gsm = gsm;
 		in = new ConsoleScanner();
-		aiFactory = new PluginFactory(new PluginLoader().getPlugins());
+		aiFactory = new PluginFactory(PluginLoader.plugins);
 	}
 
 	@Override

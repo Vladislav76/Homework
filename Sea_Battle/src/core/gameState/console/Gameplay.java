@@ -1,7 +1,7 @@
 //package core.gameState.console;
 //
 //import core.gameState.GameState;
-//import core.gameState.GameStateManager;
+//import core.gameState.ConsoleGameStateManager;
 //import core.main.GameManager;
 //import core.mapObject.SeaMap;
 //import core.message.Message;
@@ -16,7 +16,7 @@ public class Gameplay extends GameState {
 	private int gameMode;
 	private ConsoleScanner in;
 
-	public Gameplay(GameStateManager gsm) {
+	public Gameplay(ConsoleGameStateManager gsm) {
 		this.gsm = gsm;
 	}
 

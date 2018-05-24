@@ -1,7 +1,7 @@
 //package core.gameState.console;
 //
 //import core.gameState.GameState;
-//import core.gameState.GameStateManager;
+//import core.gameState.ConsoleGameStateManager;
 //import core.message.Message;
 //import core.message.GameSettingsMessage;
 
@@ -30,7 +30,7 @@ public class ModeMenu extends GameState {
 
 	private int currentSizeOption = 0;
 
-	public ModeMenu(GameStateManager gsm) {
+	public ModeMenu(ConsoleGameStateManager gsm) {
 		this.gsm = gsm;
 	}
 
