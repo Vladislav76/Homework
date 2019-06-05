@@ -1,4 +1,4 @@
-package Decoder;
+package decoder;
 
 import java.util.Scanner;
 import java.io.FileReader;

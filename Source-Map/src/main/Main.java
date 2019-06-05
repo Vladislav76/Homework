@@ -1,7 +1,6 @@
-package Main;
+package main;
 
-import Decoder.Base64;
-import Decoder.SourceMapDecoder;
+import decoder.SourceMapDecoder;
 
 public class Main {
 
